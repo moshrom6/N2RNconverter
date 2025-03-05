@@ -1,0 +1,86 @@
+:root {
+    --space-1: #faf0e0;
+    --space-2: #eadaba;
+    --space-3: #fada9a;
+    --text-1: #aa6a0a;
+    --text-2: #4a1a0a;
+    --alert-1: #ff7a5a;
+    --alert-2: #aa2a0a;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  
+  html {
+    background-color: var(--space-1);
+  }
+  
+  /* Alert for invalid input */
+  .alert {
+    background-color: var(--alert-1);
+    color: var(--alert-2)!important;
+    font-weight: bold;
+    font-size: 4rem!important;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    max-width: 450px;
+    min-width: 350px;
+    text-align: center;
+    position: absolute;
+    top: 3vh;
+    font-size: 5rem;
+    color: var(--text-1);
+  }
+  
+  fieldset {
+    min-width: 230px;
+    min-height: 100px;
+    width: 20vw;
+    background-color: var(--space-2);
+  }
+  
+  #label {
+    color: var(--text-1);
+    font-size: 1.5rem;
+  }
+  
+  #number {
+    display: block;
+    min-width: 150px;
+    width: 16vw;
+    background-color: var(--space-3);
+    color: var(--text-2);
+    min-height: 25px;
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+  
+  #convert-btn {
+    background-color: var(--space-3);
+    color: var(--text-1);
+    font-size: 1.5rem;
+  }
+  
+  #output {
+    color: var(--text-2);
+    min-height: 25px;
+    font-size: 3rem;
+  }
+  
