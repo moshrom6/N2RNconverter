@@ -1,8 +1,6 @@
-
 const convertBtn = document.getElementById("convert-btn");
 const form = document.getElementById("form");
 const convertOutput = document.getElementById("output");
-
 const convertToRoman = num => {
   const romanRef = [
     ['M',	1000],
