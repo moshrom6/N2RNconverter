@@ -30,6 +30,14 @@
   .block {
     display: block;
   }
+
+  .fa-gears {
+    min-height: 16px;
+    height: 4vh;
+    padding: 4px 10px;
+  }
+
+
   
   main {
     display: flex;
@@ -77,10 +85,34 @@
     color: var(--text-1);
     font-size: 1.5rem;
   }
-  
+
+  #convert-btn:active {
+    background-color: var(--text-1);
+    color: var(--space-3);    
+  }
+
+
   #output {
     color: var(--text-2);
     min-height: 25px;
     font-size: 3rem;
   }
   
+  /* For iPhones, Android, etc. */
+  @media only screen and (max-width: 600px) {
+    :root {
+      font-size: 8px;
+    }
+    
+    #output {
+      font-size: 2.5rem;
+    }
+
+    .alert {
+      font-size: 3rem!important;
+    }
+
+    .fa-gears {
+      height: 10px;
+    }
+  }
