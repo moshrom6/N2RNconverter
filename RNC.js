@@ -46,13 +46,13 @@ const valueCheck = () => {
   const int = parseInt(inputValue, 10);
   resultReset();
   if (inputValue == '') {
-    convertOutput.innerText = "Please enter a valid number";
+    convertOutput.innerText = "Please enter a valid number.";
     convertOutput.classList.add("alert");
   } else if (inputValue < 1) {
-    convertOutput.innerText = "Please enter a number greater than or equal to 1";
+    convertOutput.innerText = "Please enter a number greater than or equal to 1!";
     convertOutput.classList.add("alert");
   } else if (inputValue >= 4000) {
-    convertOutput.innerText = "Please enter a number less than or equal to 3999";
+    convertOutput.innerText = "Please enter a number less than or equal to 3999!";
     convertOutput.classList.add("alert");
   } else {
     convertOutput.innerText = convertToRoman(int);
